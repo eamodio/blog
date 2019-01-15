@@ -14,7 +14,7 @@ layout: default
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
-        <h1 class="post-title">
+        <h1 class="post-title p-name" itemprop="name headline">
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
@@ -34,17 +34,21 @@ layout: default
             • <span class="post-meta readingTime" title="{{ post.mins }} min read">{{ post.mins }} min read</span>
           {%- endif -%}
         </p>
-        {% if site.show_excerpts %}
-        <div class="excerpt">
-          {% if post.excerpt_image %}
-          <img src="{{post.excerpt_image }}" />
-          {% endif %}
-          {{ post.excerpt }}
-          <a class="button button--flat post-button" href="{{ post.url | relative_url }}" class="read-more">Read More</a>
+        <div class="post-content e-content" itemprop="articleBody">
+          {% if site.show_excerpts %}
+          <div class="excerpt">
+            {% if post.excerpt_image %}
+            <figure class="image">
+              <img src="{{post.excerpt_image }}" />
+            </figure>
+            {% endif %}
+            {{ post.excerpt }}
+            <a class="button button--flat post-button" href="{{ post.url | relative_url }}">Read More</a>
+          </div>
+        {% else %}
+          {{ post.content }}
+        {% endif %}
         </div>
-      {% else %}
-        {{ post.content }}
-      {% endif %}
       </li>
       {%- endfor -%}
     </ul>

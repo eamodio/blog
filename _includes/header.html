@@ -1,12 +1,12 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper wrapper--header">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    <!-- {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%} -->
 
-    {%- if site.gravatar -%}
+    {%- if site.avatar_url -%}
     <a class="site-avatar" rel="author" href="{{ "/" | relative_url }}">
-      <img src="{{site.gravatar}}"/>
+      <img src="{{site.avatar_url}}"/>
     </a>
     {%- endif -%}
     <span class="site-title">
