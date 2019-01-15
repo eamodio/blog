@@ -23,7 +23,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.amod.io" # the base hostname & protocol for your site, e.g. http://example.com
 avatar_url: https://secure.gravatar.com/avatar/412d2e93a4d1049af95c3b16409e1a6f
 
-google_analytics: UA-110925859-1
+google_analytics: UA-110925859-3
 
 twitter_username: eamodio
 github_username:  eamodio
