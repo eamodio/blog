@@ -7,7 +7,7 @@ mins: 4
 excerpt_image: https://media1.tenor.com/images/c254104d70472c7e48c0a7c6f9113486/tenor.gif?itemid=12748106
 ---
 
-OK fine, sometimes it is, but let's go beyond finger pointing and talk about the far more valuable aspect of the blame features of [GitLens][gitlens] for [VS Code][vscode]. Why? Because often when I hear about people talking about GitLens, it's about using these features to blame past you or someone else.
+OK fine, sometimes it is, but let's go beyond finger pointing and talk about the far more valuable aspect of the blame features of [GitLens][gitlens] for [VS Code][vscode]. Why? Because often when I hear people talking about GitLens, it's about using these features to blame past you or someone else.
 
 {% include image.html url="https://media1.tenor.com/images/c254104d70472c7e48c0a7c6f9113486/tenor.gif?itemid=12748106" %}
 
@@ -17,13 +17,13 @@ OK fine, sometimes it is, but let's go beyond finger pointing and talk about the
 
 ### GitLens &mdash; <small>Git supercharged</small>
 [GitLens][gitlens] is an open-source extension I created for VS Code. GitLens, together with Git support built into VS Code, offers a fairly complete Git GUI directly in your editor. Here's a quick summary:
-> GitLens **supercharges** the Git capabilities built into Visual Studio Code. It helps you to **visualize code authorship** at a glance via Git blame annotations and code lens, **seamlessly navigate and explore** Git repositories, **g**ain valuable insights** via powerful comparison commands, and so much more.
+> GitLens **supercharges** the Git capabilities built into Visual Studio Code. It helps you to **visualize code authorship** at a glance via Git blame annotations and code lens, **seamlessly navigate and explore** Git repositories, **gain valuable insights** via powerful comparison commands, and so much more.
 >
 > GitLens simply helps you **better understand code**. Quickly glimpse into whom, why, and when a line or code block was changed. Jump back through history to gain further insights as to how and why the code evolved. Effortlessly explore the history and evolution of a codebase.
 
 ---
 
-So GitLens is often mentioned in the context of blaming someone &mdash; even though mostly tongue-in-cheek and often self-deprecating. Aside from obvious comedic effect, my guess is this is largely because of the poor naming of its headline feature &mdash;_ blame_. While GitLens adopted this naming because it's what Git and other Git tools call it (who am I to buck the trend), the feature is far more valuable than just blaming yourself or someone else. Now you might be rightly thinking, “_Boo hoo! You just don't like being called out for your 💩 code_”, but hear me out. 
+So GitLens is often mentioned in the context of blaming someone &mdash; even though mostly tongue-in-cheek and often self-deprecating. Aside from obvious comedic effect, my guess is this is largely because of the poor naming of its headline feature &mdash;_ blame_. While GitLens adopted this naming because it's what Git and other Git tools call it (Who am I to buck the trend?), the feature is far more valuable than just blaming yourself or someone else. Now you might be rightly thinking, “_Boo hoo! You just don't like being called out for your 💩 code_”, but hear me out. 
 
 ---
 
