@@ -14,24 +14,33 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Eric Amodio
-author: Eric Amodio
-email: eric@amod.io
-
 description: >- # this means to ignore newlines until "baseurl:"
-  Eric Amodio — full-stack developer, creator of GitLens
+  Father, husband, code monkey, entrepreneur, geek. Creator of GitLens for VS Code. VP of Engineering at CodeStream. ❤ open-source
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.amod.io" # the base hostname & protocol for your site, e.g. http://example.com
+image: https://www.amod.io/assets/summary.png
+
+author: eamodio
 avatar_url: https://secure.gravatar.com/avatar/412d2e93a4d1049af95c3b16409e1a6f
+email: eric@amod.io
 
 google_analytics: UA-110925859-3
+twitter:
+  username: eamodio
+social:
+  name: Eric Amodio
+  links:
+    - https://twitter.com/eamodio
+    - https://github.com/eamodio
+    - https://www.linkedin.com/in/eamodio
 
 twitter_username: eamodio
 github_username:  eamodio
+linkedin_username:  eamodio
 
-show_excerpts: true
 date_format: "%-d %b %Y"
-
 permalink: pretty
+show_excerpts: true
 
 # Build settings
 markdown: kramdown

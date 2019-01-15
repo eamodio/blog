@@ -10,7 +10,9 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2> -->
+    {% comment %}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    {% endcomment %}
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
@@ -37,9 +39,9 @@ layout: default
         <div class="post-content e-content" itemprop="articleBody">
           {% if site.show_excerpts %}
           <div class="excerpt">
-            {% if post.excerpt_image %}
+            {% if post.image %}
             <figure class="image">
-              <img src="{{post.excerpt_image }}" />
+              <img src="{{post.image }}" />
             </figure>
             {% endif %}
             {{ post.excerpt }}
