@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2> -->
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        <h1 class="post-title">
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h1>
+        {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+        <p class="post-meta">
+            <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished" title="{{post.date | date: "%A, %B %-d, %Y"}}">
+                {{ post.date | date: date_format }}
+            </time>
+            {%- if post.author -%}
+            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ post.author }}</span></span>
+          {%- endif -%}
+          {%- if post.mins -%}
+            {%- if post.author -%}
+            &nbsp;
+            {%- endif -%}
+            • <span class="post-meta readingTime" title="{{ post.mins }} min read">{{ post.mins }} min read</span>
+          {%- endif -%}
+        </p>
+        {% if site.show_excerpts %}
+        <div class="excerpt">
+          {% if post.excerpt_image %}
+          <img src="{{post.excerpt_image }}" />
+          {% endif %}
+          {{ post.excerpt }}
+          <a class="button button--flat post-button" href="{{ post.url | relative_url }}" class="read-more">Read More</a>
+        </div>
+      {% else %}
+        {{ post.content }}
+      {% endif %}
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+
+</div>
