@@ -4,12 +4,12 @@ title:  "It's not (just) about the blame"
 date:   2019-01-15 01:00:00 -0500
 categories: gitlens
 mins: 4
-image: https://media1.tenor.com/images/c254104d70472c7e48c0a7c6f9113486/tenor.gif?itemid=12748106
+image: assets/posts/2019-01-15.gif
 ---
 
 OK fine, sometimes it is, but let's go beyond finger pointing and talk about the far more valuable aspect of the blame features of [GitLens][gitlens] for [VS Code][vscode]. Why? Because often when I hear people talking about GitLens, it's about using these features to blame past you or someone else.<!-- more -->
 
-{% include image.html url="https://media1.tenor.com/images/c254104d70472c7e48c0a7c6f9113486/tenor.gif?itemid=12748106" %}
+{% include image.html url="assets/posts/2019-01-15.gif" %}
 
  If you aren't already familiar with GitLens, please [check it out ][gitlens]&mdash; go ahead, I'll wait 😁&mdash; otherwise feel free to skip over the next section.
 

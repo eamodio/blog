@@ -6,13 +6,19 @@
     {%- assign page_paths = site.header_pages | default: default_paths -%} -->
     {% endcomment %}
 
-    {%- if site.avatar_url -%}
-    <a class="site-avatar" rel="author" href="{{ "/" | relative_url }}">
-      <img src="{{site.avatar_url}}"/>
+    {%- if page.is_post -%}
+    <a class="site-back" href="{{ "/" | relative_url }}" title="Back to all posts">
+      <svg class="svg-icon"><use xlink:href="{{ '/assets/icons.svg#home' | relative_url }}"></use></svg>
     </a>
+    {%- else -%}
+      {%- if site.avatar_url -%}
+      <a class="site-avatar" rel="author" href="{{ site.home_url | absolute_url }}" title="About me">
+        <img src="{{site.avatar_url}}"/>
+      </a>
+      {%- endif -%}
     {%- endif -%}
     <span class="site-title">
-        <a rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+        <a rel="author" href="{{ site.home_url | absolute_url }}" title="About me">{{ site.title | escape }}</a>
     </span>
 
     <div class="site-social">
