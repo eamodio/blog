@@ -23,7 +23,7 @@ OK fine, sometimes it is, but let's go beyond finger pointing and talk about the
 
 ---
 
-So GitLens is often mentioned in the context of blaming someone &mdash; even though mostly tongue-in-cheek and often self-deprecating. Aside from obvious comedic effect, my guess is this is largely because of the poor naming of its headline feature &mdash;_ blame_. While GitLens adopted this naming because it's what Git and other Git tools call it (Who am I to buck the trend?), the feature is far more valuable than just blaming yourself or someone else. Now you might be rightly thinking, “_Boo hoo! You just don't like being called out for your 💩 code_”, but hear me out. 
+So GitLens is often mentioned in the context of blaming someone &mdash; even though mostly tongue-in-cheek and often self-deprecating. Aside from obvious comedic effect, my guess is this is largely because of the poor naming of its headline feature &mdash;_ blame_. While GitLens adopted this naming because it's what Git and other Git tools call it (Who am I to buck the trend?), the feature is far more valuable than just blaming yourself or someone else. Now you might be rightly thinking, “_Boo-hoo! You just don't like being called out for your 💩 code_”, but hear me out. 
 
 ---
 
